@@ -1,0 +1,85 @@
+{
+  "cookies": [
+    {
+      "name": "client",
+      "value": "66bd8944f8989416c2643303f4d5e9df",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": 1723748247.006484,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "iws",
+      "value": "b349138259b5790afd6a7c0cb2ad8f42",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": 1758221847.346641,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ck_cook",
+      "value": "yes",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": 1739213848,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "basket_products_count",
+      "value": "0",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "wishes_products_count",
+      "value": "0",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "REGID",
+      "value": "1143020003",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": 1739213848.926775,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "page_counter",
+      "value": "1",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": 1723748248.926867,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.spawalnictwo.pl",
+      "localStorage": [
+        {
+          "name": "ls_first_referrer",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}

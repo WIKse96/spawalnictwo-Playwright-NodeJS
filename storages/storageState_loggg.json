@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "client",
+      "value": "6ba98ebc2b98b6fbb5c5e12330605381",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": 1723751526.478525,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "iws",
+      "value": "4551f5a7fcbd5af05b6734e8a7edfe5a",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": 1758225126.881074,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.spawalnictwo.pl",
+      "localStorage": [
+        {
+          "name": "ls_first_referrer",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}

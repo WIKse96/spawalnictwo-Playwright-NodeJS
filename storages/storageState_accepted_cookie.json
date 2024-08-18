@@ -1,0 +1,25 @@
+{
+  "cookies": [
+    {
+      "name": "client",
+      "value": "6f1fc0430d2f408d94a5893029864960",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": 1724089892.13667,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "iws",
+      "value": "802c37a420d79986ef8a97901c84e8b4",
+      "domain": "www.spawalnictwo.pl",
+      "path": "/",
+      "expires": 1758563492.482988,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
