@@ -54,4 +54,5 @@ test('Menu tests', async ({page})=>{
   await main_page.goto('/');
   await storage_handler.read_storage('accepted');
   await page.reload();
+  // TODO: Stworzyc testy dla menu
 })
