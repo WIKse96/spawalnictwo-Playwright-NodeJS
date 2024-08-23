@@ -3,48 +3,38 @@ import { MainPage } from '../supports/main-page';
 import { Storages } from '../supports/storages_hanlder';
 import { ProductCart } from '../supports/product_cart_page';
 
+test.describe('Product card', () => {
+  let storage: Storages;
+  let mainPage: MainPage;
+  let productCart: ProductCart;
 
+  test.beforeEach(async ({ page }) => {
+    storage = new Storages(page);
+    mainPage = new MainPage(page);
+    productCart = new ProductCart(page);
 
-test.beforeEach(async ({page}) => {
-        const storage = new Storages(page);
-        const main_page = new MainPage(page);
-        await main_page.goto('products/bezpieczenstwo-pracy/odziez-i-rekawice/rekawice/-42082.html');
-        await storage.read_storage('accepted');
-        await page.reload();
+    await mainPage.goto('products/bezpieczenstwo-pracy/odziez-i-rekawice/rekawice/-42082.html');
+    await storage.read_storage('accepted');
+    await page.reload();
   });
 
-test.describe('Product card', {
-    
-}, ()=>{
-    test('add to cart ',{
-        tag:'@positive',
-    } ,async({page})=>{
-        const product_cart = new ProductCart(page);
-        await product_cart.add_to_cart();
-        await product_cart.compare_price();
-        
-    
-    })
-    test('add to cart and close poup ',{
-        tag:'@positive',
-    } ,async({page})=>{
-        const product_cart = new ProductCart(page);
-        await product_cart.add_to_cart();
-        await product_cart.close_by_x();
-    })
-    test('add to cart and continue shopping ',{
-        tag:'@positive',
-    } ,async({page})=>{
-        const product_cart = new ProductCart(page);
-        await product_cart.add_to_cart();
-        await product_cart.continue_shopping();
-    })
-    test('set qty add to cart',{
-        tag:'@positive',
-    } ,async({page})=>{
-        const product_cart = new ProductCart(page);
-        await product_cart.change_qty(2);
-        await product_cart.change_qty(3);
-        await product_cart.add_to_cart();
-    })
-})
+  test('Add to cart', async ({ page }) => {
+    await productCart.add_to_cart();
+    await productCart.compare_price();
+  });
+
+  test('Add to cart and close popup', async ({ page }) => {
+    await productCart.add_to_cart();
+    await productCart.close_by_x();
+  });
+
+  test('Add to cart and continue shopping', async ({ page }) => {
+    await productCart.add_to_cart();
+    await productCart.continue_shopping();
+  });
+
+  test('Set quantity and add to cart', async ({ page }) => {
+    await productCart.change_qty(2);
+    await productCart.add_to_cart();
+  });
+});
